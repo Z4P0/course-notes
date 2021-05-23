@@ -1,7 +1,7 @@
 {
   "name": "course-notes",
   "version": "1.0.0",
-  "description": "",
+  "description": "An 11ty site for taking notes during a course.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
