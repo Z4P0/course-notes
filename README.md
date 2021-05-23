@@ -1,6 +1,6 @@
 # Course Notes (WIP)
 
-An 11ty site for course notetaking.
+An 11ty site for course notetaking. [Demo](https://cocky-ramanujan-275bc4.netlify.app/).
 
 Taking a course? Do you write your notes in text or markdown files? Fan of 11ty? Try this out.
 
