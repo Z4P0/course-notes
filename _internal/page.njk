@@ -1,0 +1,39 @@
+---
+title: Introduction to HTML
+course: Introduction to HTML
+---
+
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <p>
+          <strong>
+            <a href="/">{{ course }}</a>
+          </strong>
+        </p>
+        <ul>
+        {%- for lesson in collections.lesson -%}
+          {# <li>{{ lesson.data.title }}</li> #}
+          <li{% if page.url == lesson.url %} aria-current="page"{% endif %}>
+            <a href="{{ lesson.url }}">
+              {{ lesson.data.title }}
+            </a>
+          </li>
+        {%- endfor -%}
+        </ul>
+      </header>
+      <hr/>
+      <main>
+        {{ content | safe }}
+      </main>
+    </div>
+  </body>
+</html>
