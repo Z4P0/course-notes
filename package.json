@@ -1,6 +1,6 @@
 {
   "name": "course-notes",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "An 11ty site for taking notes during a course.",
   "main": "index.js",
   "scripts": {
