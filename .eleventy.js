@@ -4,12 +4,10 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('files');
   eleventyConfig.addPassthroughCopy('screenshots');
 
-  /* trying to explicitly add favicon.ico as a fallback for old browsers */
-  // eleventyConfig.addPassthroughCopy('assets/favicon.ico');
-
   return {
     dir: {
-      includes: "../_internal",
+      data: '../_data',
+      includes: '../_internal',
       input: 'notes',
       output: 'www'
     }

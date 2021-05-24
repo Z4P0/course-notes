@@ -1,14 +1,13 @@
----
-title: Introduction to HTML
-course: Introduction to HTML
----
-
 <!doctype html>
 <html lang="en-US">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }}</title>
+    {% if title %}
+      <title>{{ title }} • {{ config.course }}</title>
+    {% else %}
+      <title>{{ config.course }}</title>
+    {% endif %}
     <link rel="stylesheet" href="/css/styles.css">
   </head>
   <body>
@@ -16,7 +15,7 @@ course: Introduction to HTML
       <header>
         <p>
           <strong>
-            <a href="/">{{ course }}</a>
+            <a href="/">{{ config.course }}</a>
           </strong>
         </p>
         <ul>
