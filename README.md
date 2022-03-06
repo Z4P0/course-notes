@@ -25,7 +25,11 @@ Quick Look on Mac can't read Markdown files so it only shows a generic file icon
 
 ### Why not something like 11ty?
 
-11ty is great but needs a web server, which on a local machine means running `npm install` and having a `node_modules` folder for a couple of web pages. If you write notes in Markdown, run into the previous issue of Quick Look not being able to read Markdown files. Even if you create HTML files you still need to run the server because of how URLs are written with 11ty. An earlier version of this project was made with 11ty.
+11ty is great but needs a web server, which on a local machine means running `npm install` and having a `node_modules` folder for a couple of web pages.
+
+If you write notes in Markdown, run into the previous issue of Quick Look not being able to read Markdown files. Even if you create HTML files you still need to run the server because of how URLs are written with 11ty.
+
+An earlier version of this project was made with 11ty. Full disclaimer, I'm a huge 11ty fan.
 
 ### Why not Notion?
 
